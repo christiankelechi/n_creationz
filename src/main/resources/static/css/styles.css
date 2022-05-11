@@ -29,7 +29,12 @@ display: block;
     font-size: 16px;
     width: 100%;
 }
-div{
+.navdiv{
+    display: flex;
+    flex-direction: row;
+}
+.homintro{
+    font-size: 16px;
     width: 100%;
 }
 .aboutdiv{
