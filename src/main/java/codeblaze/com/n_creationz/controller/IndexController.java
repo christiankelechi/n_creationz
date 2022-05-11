@@ -10,4 +10,8 @@ public class IndexController {
     public String getHomePage(Model model){
         return "index";
     }
+     @GetMapping("/about")
+    public String getAboutPage(Model model){
+        return "about";
+    }
 }
