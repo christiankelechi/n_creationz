@@ -34,8 +34,11 @@ div div{
     justify-content: stretch;
 
 }
+div{
+    width: 100%;
+}
 .aboutimagephotodiv{
-    width: 250%;
+    width: 100%;
 }
 .aboutdiv{
     
