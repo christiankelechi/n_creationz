@@ -13,6 +13,47 @@ height: 7rem;
 p{
     
 }
+.generalbody{
+    
+}
+body{
+    padding: 5px;
+    border-right: 10px solid skyblue;
+}
+.abouttext{
+    width: 70%;
+font-size: 25px;
+}
+.mainabouttext{
+display: block;
+    
+}
+div div{
+    display: flex;
+}
+
+.aboutdiv{
+    
+   padding: 1rem;
+    color: black;
+}
 body{
     background-color:white;
+}
+.titleofabout{
+    padding: 0.5rem;
+    width: 14rem;
+    margin-left: 0.5rem;
+    color: black;
+    border: 3px solid black;
+    background-color: skyblue;
+}
+.aboutimage{
+    border: 2px white;
+    width: 442px;
+    height: 571px;
+}
+.achievement{
+    font-size: 25px;
+    width: 70%;
 }

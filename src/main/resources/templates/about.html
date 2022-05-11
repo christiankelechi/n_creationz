@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <div>
+
+    <div class="generalbody">
         <div class="ncreationsheader">
             <img th:src="@{/images/ncreationzlogo.jpg}" alt="backgroundimage" class="logoimage">
             <p style="font-size: 26px;color: white;">N_CREATIONZ DESIGN PLATFORM</p>
@@ -44,10 +45,28 @@
             </nav>
             
         </div>
-        <h1>About Me</h1>
-        <p>My name is Clement Chinonso Eze, Graduate from the department
+        <h1 class="titleofabout">About Me</h1>
+        <div class="aboutdiv">
+            
+            <div class="mainabouttext">
+        <p class="abouttext">My name is Clement Chinonso Eze, Graduate from the department of Fine and 
+            Applied Art, Nnamdi Azikiwe University Awka, Anambra State
+            . A graphic designer and an artist with over 4 years experience.
+            I have created so many brand designs for notable companies and upcoming
+            small scale businesses for the purpose of publicity and advertising
 
         </p>
+        <h3>Achievements</h3>
+        <p class="achievement">I have been opportuned to handle ui/ux designs for different business brands such as 1.Immaculate
+            bakery. Nikki.Obeauty
+        </p>
+        
+        </div>
+        <div class="clementimage">
+            <img th:src="@{/images/clementphoto.jpg}" alt="aboutimagephoto" class="aboutimage">
+        </div>
+        </div>
+        </div>
     </div>
 
 </body>
