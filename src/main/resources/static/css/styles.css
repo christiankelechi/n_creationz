@@ -53,6 +53,12 @@ body{
     width: 442px;
     height: 571px;
 }
+    @media (max-width: 600px) {
+            .aboutimage {
+                width: 100%; 
+            }
+        
+}
 .achievement{
     font-size: 25px;
     width: 70%;
