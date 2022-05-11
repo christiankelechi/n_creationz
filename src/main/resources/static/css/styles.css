@@ -30,8 +30,13 @@ display: block;
 }
 div div{
     display: flex;
-}
+    flex-direction: row;
+    justify-content: stretch;
 
+}
+.aboutimagephotodiv{
+    width: 250%;
+}
 .aboutdiv{
     
    padding: 1rem;
@@ -48,17 +53,12 @@ body{
     border: 3px solid black;
     background-color: skyblue;
 }
-.aboutimage{
+.aboutimagephoto{
     border: 2px white;
-    width: 100%;
-    height: auto;
+    width: 250%;
+    
 }
-    @media (max-width: 600px) {
-            .aboutimage {
-                width: 100%; 
-            }
         
-}
 .achievement{
     font-size: 25px;
     width: 70%;
