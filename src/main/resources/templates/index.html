@@ -8,20 +8,22 @@
     <link rel="stylesheet" th:href="@{/css/styles.css}">
     <title>N_CREATIONZ</title>
 </head>
-<body class="flex-grow-1">
+<body>
     <div class="d-flex flex-column p-5">
 <div class="ncreationsheader" id="ncreationheaderid">
 <img th:src="@{/images/ncreationzlogo.jpg}" alt="backgroundimage" class="logoimage">
 <p style="font-size: 26px;color: white;">N_CREATIONZ DESIGN PORTFOLIO</p>
 </div>
 <div>
-<div class="navdiv" id="navhomeid">
+<div class="navdiv navbar-collapse navbar-toggle" id="navhomeid">
     <nav class="navbar customnavcss">
     <a class="nav-link" th:href="@{/index}">Home</a>
     <a class="nav-link" aria-current="page" th:href="@{'#aboutindexid'}">About</a>
     <a class="nav-link" th:href="@{'#projectsid'}">Projects</a>
     <a class="nav-link" th:href="@{'#skillsid'}">Skills</a>
-    <a class="nav-link" th:href="@{'#contactfooter'}">Contact</a>
+    <a class="nav-link" th:href="@{'#contactid'}">Contact</a>
+    <a class="nav-link" th:href="@{'#contactid'}">Certificate</a>
+    <a class="nav-link" th:href="@{'#contactid'}">CV</a>
     </nav>
 </div>
 <div >
@@ -110,21 +112,18 @@ native outfits, designers and senators styles outfit. In conclusion we are purpo
 </div>
     </div>
     
-   <footer id="contactfooter">
-       <div class="watsapdiv">
-           <ul>
-               <img th:src="@{/images/watsaplogo.jpg}" alt="" style="width: 5rem;height:4rem">
-               <li>Watsap</li>
-           </ul>
+   <footer class="d-flex flex-row footerbackground customdisplay" id="contactid">
+       <div>
+<a th:href="@{'https://wa.me/<+2348068784861>'}"><img th:src="@{/images/watsaplogo.jpg}" alt="" style="width: 5rem;height:4rem"></a><br>
+<a th:href="@{'https://wa.me/<+2348068784861>'}">Watsap</a>
        </div>
-       <div class="instagramdiv">
-        <ul>
-            <img th:src="@{/images/watsaplogo.jpg}" alt="" style="width: 5rem;height:4rem">
-            <li>Instagram</li>
-            
-        </ul>
-       </div>
-<a th:href="@{'#ncreationheaderid'}">Back to top</a>
+             <div> 
+          <a th:href="@{'https://wa.me/<+2348068784861>'}">  <img th:src="@{/images/instagramlogo.jpg}" alt="" style="width: 5rem;height:4rem"></a><br>
+            <a th:href="@{'https://wa.me/<+2348068784861>'}">Instagram</a>
+            </div>
+
    </footer>
+<a th:href="@{'#ncreationheaderid'}">Back to top</a>
+<h4>Powered by Codeblaze Team &copy;2022</h4>
 </body>
 </html>

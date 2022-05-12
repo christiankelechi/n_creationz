@@ -96,3 +96,14 @@ display: block;
 .aboutimagephotodiv{
 
 }
+.footerbackground{
+    background-color: rgb(43, 205, 226);
+}
+.watsaplink .instagramlink{
+display: flex;
+flex-direction: row;
+}
+.customdisplay{
+    padding: 10px;
+    justify-content: space-around;
+}
