@@ -8,24 +8,119 @@
     <link rel="stylesheet" th:href="@{/css/styles.css}">
     <title>N_CREATIONZ</title>
 </head>
-<body>
-    <div>
-<div class="ncreationsheader">
+<body class="flex-grow-1">
+    <div class="d-flex flex-column p-5">
+<div class="ncreationsheader" id="ncreationheaderid">
 <img th:src="@{/images/ncreationzlogo.jpg}" alt="backgroundimage" class="logoimage">
-<p style="font-size: 26px;color: white;">N_CREATIONZ DESIGN PLATFORM</p>
+<p style="font-size: 26px;color: white;">N_CREATIONZ DESIGN PORTFOLIO</p>
 </div>
 <div>
-<div class="navdiv">
-    <a class="navbar-brand" th:href="@{/index}">Home</a>
-    <a class="nav-link active" aria-current="page" th:href="@{/about}">About</a>
-    <a class="nav-link" href="#">Projects</a>
-    <a class="nav-link" href="#">Skills</a>
+<div class="navdiv" id="navhomeid">
+    <nav class="navbar customnavcss">
+    <a class="nav-link" th:href="@{/index}">Home</a>
+    <a class="nav-link" aria-current="page" th:href="@{'#aboutindexid'}">About</a>
+    <a class="nav-link" th:href="@{'#projectsid'}">Projects</a>
+    <a class="nav-link" th:href="@{'#skillsid'}">Skills</a>
+    <a class="nav-link" th:href="@{'#contactfooter'}">Contact</a>
+    </nav>
+</div>
+<div >
+<p>N Creation Design Hub</p>
+<div class="bodyimage flex-grow-1">
+
+</div>
 </div>
 <p class="homeintro">N_CREATIONZ is an aesthetic Graphics/Fashion design site designed 
     for the purpose of offering all types of graphics designs and apparel to target audience
+. N_CREATIONZ in a nutshell is known for creating exclusive / premium designs for businesses and it's individual clients for the purpose of publicity, aesthetics and advertising . We alsoe specialise in sewing male clothing both casuals,
+native outfits, designers and senators styles outfit. In conclusion we are purpose driven and our customer service is topnotch
 </p>
 </div>
     </div>
-   
+    <div class="aboutindex" id="aboutindexid">
+<h1 class="titleofabout">About Me</h1>
+<div class="homeinfo">
+    <div class="aboutimagephotodiv homeinfo">
+        <img th:src="@{/images/clementphoto.jpg}" alt="aboutimagephoto" class="img-fluid flex-fill">
+    </div>
+    <div class="homeintro">
+        <p>My name is Clement Chinonso Eze, Graduate from the department of Fine and
+            Applied Art, Nnamdi Azikiwe University Awka, Anambra State
+            . A graphic designer and an artist with over 4 years experience.
+            I have created so many brand designs for notable companies and upcoming
+            small scale businesses for the purpose of publicity and advertising
+
+        </p>
+        <h3 class="abouttext">Achievements</h3>
+        <p class="abouttext">I have been opportuned to handle ui/ux designs for different business brands such as
+            1.Immaculate
+            bakery. Nikki.Obeauty
+        </p>
+
+    </div>
+
+</div>
+    </div>
+    </div>
+    <div style="margin-left:12rem;" id="projectsid">
+<h1>Projects</h1>
+<p>The Various projects handled are listed below</p>
+<div>
+<ol type="1">
+    <li>Logo Designs</li>
+    <li>Flyer/Poster designs</li>
+    <li>Facebook/Youtube Ads</li>
+    <li>Photo Editing</li>
+    <li>Digital paintings</li>
+    <li>Complementary cards</li>
+    <li>Flex/Banner designs</li>
+    <li>Branded Corporate materials such as Face cap, diary, T-Shirt and Crest</li>
+</ol>
+</div>
+    </div>
+    <div id="skillsid">
+        <h1>SKILLS ACQUIRED ARE AS FOLLOWS</h1>
+        <ul>
+            <li>-Graphics Design
+                <ul>
+                    <li>Branding</li>
+                    <li>Advertising and publicity designs</li>
+                    <li>illustration</li>
+                    <li>Digital Painting</li>
+                    <li>Book cover designs</li>
+                </ul>
+            </li>
+            <li>-Fashion
+                <ul>
+                    <li>Sewing</li>
+                    <li>Drafting pattern designs etc</li>
+                </ul>
+            </li>
+            <li>-Painting Buildings
+                <ul>
+                    <li>(Interior and Exterior)</li>
+                </ul>
+            </li>
+        </ul>
+<div>
+
+</div>
+    </div>
+   <footer id="contactfooter">
+       <div class="watsapdiv">
+           <ul>
+               <img th:src="@{/images/watsaplogo.jpg}" alt="" style="width: 5rem;height:4rem">
+               <li>Watsap</li>
+           </ul>
+       </div>
+       <div class="instagramdiv">
+        <ul>
+            <img th:src="@{/images/watsaplogo.jpg}" alt="" style="width: 5rem;height:4rem">
+            <li>Instagram</li>
+            
+        </ul>
+       </div>
+<a th:href="@{'#ncreationheaderid'}">Back to top</a>
+   </footer>
 </body>
 </html>

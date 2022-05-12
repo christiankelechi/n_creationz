@@ -10,8 +10,23 @@ height: 7rem;
     flex-direction: row;
 
 }
+.projectintro{
+    text-align: center;
+}
+.bodyimage{
+    background-image: url("/images/background.png");
+        background-repeat: no-repeat;
+        width: 17rem;
+        height: 15rem;
+        justify-content: center;
+        background-size: 100%;
+        justify-self: center;
+}
 p{
     
+}
+.mainabouttext{
+    text-align: justify;
 }
 .generalbody{
     
@@ -19,6 +34,9 @@ p{
 body{
     padding: 5px;
     border-right: 10px solid skyblue;
+
+    
+    
 }
 .abouttext{
     width: 70%;
@@ -33,17 +51,21 @@ display: block;
     display: flex;
     flex-direction: row;
 }
-.homintro{
-    font-size: 16px;
+.homeintro{
+    font-size: 22px;
     width: 100%;
+    text-align: center;
 }
 .aboutdiv{
     
    padding: 1rem;
     color: black;
+    justify-self: center;
 }
-body{
-    background-color:white;
+.customnavcss{
+    font-size: 18px;
+    background-color: rgb(161, 240, 152);
+    border: 2px solid rgb(40, 135, 199);
 }
 .titleofabout{
     padding: 0.5rem;
@@ -57,4 +79,7 @@ body{
 .achievement{
     font-size: 25px;
     width: 100%;
+}
+.aboutimagephotodiv{
+
 }

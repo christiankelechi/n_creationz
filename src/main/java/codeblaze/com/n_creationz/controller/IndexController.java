@@ -14,4 +14,9 @@ public class IndexController {
     public String getAboutPage(Model model){
         return "about";
     }
+    
+    @GetMapping("/skills")
+    public String getSkillsPage(Model model) {
+        return "skills";
+    }
 }
