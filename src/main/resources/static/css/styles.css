@@ -31,6 +31,19 @@ p{
 .generalbody{
     
 }
+.headimage{
+    margin: 1rem;
+    align-self: center;
+}
+.projectdivcss{
+    padding: 1rem;
+border: 5px solid rgb(92, 94, 11);
+    background-color: aliceblue;
+}
+ .skilldivcss{
+    border: 5px solid rgb(0, 255, 21);
+    background-color: aliceblue;
+}
 body{
     padding: 5px;
     border-right: 10px solid skyblue;
