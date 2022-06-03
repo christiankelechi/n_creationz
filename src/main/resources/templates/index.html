@@ -9,55 +9,75 @@
     <title>N_CREATIONZ</title>
 </head>
 <body>
-    <div class="d-flex flex-column p-5">
-<div class="ncreationsheader" id="ncreationheaderid">
-<img th:src="@{/images/ncreationzlogo.jpg}" alt="backgroundimage" class="logoimage">
-<p style="font-size: 26px;color: white;">N_CREATIONZ DESIGN PORTFOLIO</p>
+    <nav class="navbar">
+<div class="max-width">
+    <div class="logo">
+<img th:src="@{/images/ncreationzlogo.jpg}" alt="backgroundimage" style="width:2rem ;height:2rem">
+    </div>
+<div class="logo">N_CREATIONZ DESIGN PORTFOLIO</div>
 </div>
-<div>
-<div class="navdiv navbar-collapse navbar-toggle" id="navhomeid">
-    <nav class="navbar customnavcss">
-    <a class="nav-link" th:href="@{/index}">Home</a>
-    <a class="nav-link" aria-current="page" th:href="@{'#aboutindexid'}">About</a>
-    <a class="nav-link" th:href="@{'#projectsid'}">Projects</a>
-    <a class="nav-link" th:href="@{'#skillsid'}">Skills</a>
-    <a class="nav-link" th:href="@{'#contactid'}">Contact</a>
-    <a class="nav-link" th:href="@{'#contactid'}">Certificate</a>
-    <a class="nav-link" th:href="@{'#contactid'}">CV</a>
+<ul class="menu">
+<li><a class="nav-link" th:href="@{/index}">Home</a></li>
+    <li><a aria-current="page" th:href="@{'#aboutindexid'}">About</a></li>
+    <li><a class="nav-link" th:href="@{'#projectsid'}">Projects</a></li>
+    <li><a class="nav-link" th:href="@{'#skillsid'}">Skills</a></li>
+    <li><a class="nav-link" th:href="@{'#contactid'}">Contact</a></li>
+    <li><a class="nav-link" th:href="@{'#contactid'}">Certificate</a></li>
+    <li><a class="nav-link" th:href="@{'#contactid'}">CV</a></li>
+</ul>
+<div class="menu-btn">
+    <i class="fas fa-bars"></i>
+</div>
+</div>
+
     </nav>
-</div>
-<div >
-<p>N Creation Design Hub</p>
-<div class="bodyimage flex-grow-1">
-
-</div>
-</div>
-<p class="homeintro">N_CREATIONZ is an aesthetic Graphics/Fashion design site designed 
+    
+    <!-- Home section section -->
+    <section class="home" id="home">
+<div class="max-width">
+    <div class="home-content">
+<div class="text-1">N Creation Design Hub</div>
+        <div class="text-1">N_CREATIONZ is an aesthetic Graphics/Fashion design site designed
     for the purpose of offering all types of graphics designs and apparel to target audience
-. N_CREATIONZ in a nutshell is known for creating exclusive / premium designs for businesses and it's individual clients for the purpose of publicity, aesthetics and advertising . We alsoe specialise in sewing male clothing both casuals,
-native outfits, designers and senators styles outfit. In conclusion we are purpose driven and our customer service is topnotch
-</p>
+    . N_CREATIONZ in a nutshell is known for creating exclusive / premium designs for businesses and it's individual
+    clients for the purpose of publicity, aesthetics and advertising . We alsoe specialise in sewing male clothing both
+    casuals,
+    native outfits, designers and senators styles outfit. In conclusion we are purpose driven and our customer service
+    is topnotch
 </div>
     </div>
-    <div class="aboutindex" id="aboutindexid">
-<h1 class="titleofabout">About Me</h1>
-<div class="homeinfo">
-    <div class="aboutimagephotodiv homeinfo">
-        <img th:src="@{/images/clementphoto.jpg}" alt="aboutimagephoto" class="img-fluid flex-fill">
+</div>
+    </section>
+    <!-- About Section -->
+<section class="about" id="about">
+<div class="max-width">
+    <h2 class="title">About me</h2>
+    <div class="about-content">
+        <div class="column left">
+<img th:src="@{/images/clementphoto.jpg}" alt="aboutimagephoto" style="height: 500px;width:400px">
+        </div>
+        <div class="column right">
+<div>My name is Clement Chinonso Eze, Graduate from the department of Fine and
+    Applied Art, Nnamdi Azikiwe University Awka, Anambra State
+    . A graphic designer and an artist with over 4 years experience.
+    I have created so many brand designs for notable companies and upcoming
+    small scale businesses for the purpose of publicity and advertising
+</p>
+<h3 class="abouttext">Achievements</h3>
+<p class="abouttext">I have been opportuned to handle ui/ux designs for different business brands such as
+    1.Immaculate
+    bakery. Nikki.Obeauty and so many others
+</p>
     </div>
-    <div class="homeintro">
-        <p>My name is Clement Chinonso Eze, Graduate from the department of Fine and
-            Applied Art, Nnamdi Azikiwe University Awka, Anambra State
-            . A graphic designer and an artist with over 4 years experience.
-            I have created so many brand designs for notable companies and upcoming
-            small scale businesses for the purpose of publicity and advertising
+    </div>
+</div>
+</div>
+</section>
 
-        </p>
-        <h3 class="abouttext">Achievements</h3>
-        <p class="abouttext">I have been opportuned to handle ui/ux designs for different business brands such as
-            1.Immaculate
-            bakery. Nikki.Obeauty and so many others
-        </p>
+    
+    <!-- <div class="homeintro">
+        
+        
 
     </div>
 
@@ -124,6 +144,12 @@ native outfits, designers and senators styles outfit. In conclusion we are purpo
 
    </footer>
 <a th:href="@{'#ncreationheaderid'}">Back to top</a>
-<h4>Powered by Codeblaze Team &copy;2022</h4>
+<h4>Powered by Codeblaze Team &copy;2022</h4> -->
+<script th:src="@{'/js/jq.js'}"></script>
+<script th:src="@{'/js/script.js'}"></script>
+<script th:src="@{'/js/fontawesome.min.js'}"></script>
+<script th:src="@{'/js/waypoint.min.js'}"></script>
+<script th:src="@{'/js/owlcarousel.min.js'}"></script>
+<script th:src="@{'/js/mytyped.min.js'}"></script>
 </body>
 </html>
