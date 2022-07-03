@@ -1,155 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
-    <link rel="stylesheet" th:href="@{/css/styles.css}">
-    <title>N_CREATIONZ</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    
+    <title>Ncreationz Site</title>
+    <link rel="stylesheet" th:href="@{'/css/carousel.min.css'}">
 </head>
+
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
-<div class="max-width">
-    <div class="logo">
-<img th:src="@{/images/ncreationzlogo.jpg}" alt="backgroundimage" style="width:2rem ;height:2rem">
-    </div>
-<div class="logo">N_CREATIONZ DESIGN PORTFOLIO</div>
-</div>
-<ul class="menu">
-<li><a class="nav-link" th:href="@{/index}">Home</a></li>
-    <li><a aria-current="page" th:href="@{'#aboutindexid'}">About</a></li>
-    <li><a class="nav-link" th:href="@{'#projectsid'}">Projects</a></li>
-    <li><a class="nav-link" th:href="@{'#skillsid'}">Skills</a></li>
-    <li><a class="nav-link" th:href="@{'#contactid'}">Contact</a></li>
-    <li><a class="nav-link" th:href="@{'#contactid'}">Certificate</a></li>
-    <li><a class="nav-link" th:href="@{'#contactid'}">CV</a></li>
-</ul>
-<div class="menu-btn">
-    <i class="fas fa-bars"></i>
-</div>
-</div>
-
-    </nav>
-    
-    <!-- Home section section -->
-    <section class="home" id="home">
-<div class="max-width">
-    <div class="home-content">
-<div class="text-1">N Creation Design Hub</div>
-        <div class="text-1">N_CREATIONZ is an aesthetic Graphics/Fashion design site designed
-    for the purpose of offering all types of graphics designs and apparel to target audience
-    . N_CREATIONZ in a nutshell is known for creating exclusive / premium designs for businesses and it's individual
-    clients for the purpose of publicity, aesthetics and advertising . We alsoe specialise in sewing male clothing both
-    casuals,
-    native outfits, designers and senators styles outfit. In conclusion we are purpose driven and our customer service
-    is topnotch
-</div>
-    </div>
-</div>
-    </section>
-    <!-- About Section -->
-<section class="about" id="about">
-<div class="max-width">
-    <h2 class="title">About me</h2>
-    <div class="about-content">
-        <div class="column left">
-<img th:src="@{/images/clementphoto.jpg}" alt="aboutimagephoto" style="height: 500px;width:400px">
-        </div>
-        <div class="column right">
-<div>My name is Clement Chinonso Eze, Graduate from the department of Fine and
-    Applied Art, Nnamdi Azikiwe University Awka, Anambra State
-    . A graphic designer and an artist with over 4 years experience.
-    I have created so many brand designs for notable companies and upcoming
-    small scale businesses for the purpose of publicity and advertising
-</p>
-<h3 class="abouttext">Achievements</h3>
-<p class="abouttext">I have been opportuned to handle ui/ux designs for different business brands such as
-    1.Immaculate
-    bakery. Nikki.Obeauty and so many others
-</p>
-    </div>
-    </div>
-</div>
-</div>
-</section>
-
-    
-    <!-- <div class="homeintro">
-        
-        
-
-    </div>
-
-</div>
-    </div>
-    </div>
-   
-    <div id="projectsid" class="projectdivcss">
-<h1>Projects</h1>
-<p>The Various projects handled are listed below</p>
-<div>
-<ol type="1">
-    <li>Logo Designs</li>
-    <li>Flyer/Poster designs</li>
-    <li>Facebook/Youtube Ads</li>
-    <li>Photo Editing</li>
-    <li>Digital paintings</li>
-    <li>Complementary cards</li>
-    <li>Flex/Banner designs</li>
-    <li>Branded Corporate materials such as Face cap, diary, T-Shirt and Crest</li>
-</ol>
-</div>
-    </div>
-    
-    <div id="skillsid" class="skilldivcss">
-        
-        <h1>SKILLS ACQUIRED ARE AS FOLLOWS</h1>
-        <ul>
-            <li>-Graphics Design
-                <ul>
-                    <li>Branding</li>
-                    <li>Advertising and publicity designs</li>
-                    <li>illustration</li>
-                    <li>Digital Painting</li>
-                    <li>Book cover designs</li>
-                </ul>
-            </li>
-            <li>-Fashion
-                <ul>
-                    <li>Sewing</li>
-                    <li>Drafting pattern designs etc</li>
-                </ul>
-            </li>
-            <li>-Painting Buildings
-                <ul>
-                    <li>(Interior and Exterior)</li>
-                </ul>
-            </li>
-        </ul>
-<div>
-
-</div>
-    </div>
-    
-   <footer class="d-flex flex-row footerbackground customdisplay" id="contactid">
-       <div>
-<a th:href="@{'https://wa.me/<+2348068784861>'}"><img th:src="@{/images/watsaplogo.jpg}" alt="" style="width: 5rem;height:4rem"></a><br>
-<a th:href="@{'https://wa.me/<+2348068784861>'}">Watsap</a>
-       </div>
-             <div> 
-          <a th:href="@{'https://wa.me/<+2348068784861>'}">  <img th:src="@{/images/instagramlogo.jpg}" alt="" style="width: 5rem;height:4rem"></a><br>
-            <a th:href="@{'https://wa.me/<+2348068784861>'}">Instagram</a>
+        <div class="max-width">
+            <div class="logo"><a href="">NCreationz Portfo<span>lio.</span></a>
             </div>
+            <ul class="menu">
+                <li> <a href="#home" class="menu-btn">Home</a></li>
+                <li> <a th:href="@{'#about'}" class="menu-btn">About</a></li>
+                <li><a th:href="@{'#services'}" class="menu-btn">Services</a> </li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a> </li>
+                
+                <li><a href="#footer" class="menu-btn">Contact</a> </li>
 
-   </footer>
-<a th:href="@{'#ncreationheaderid'}">Back to top</a>
-<h4>Powered by Codeblaze Team &copy;2022</h4> -->
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars">
+                </i>
+            </div>
+        </div>
+    </nav>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, My name is</div>
+                <div class="text-2">Clement Chinonso Eze</div>
+                <div class="text-3">And I am a <span class="typing"></span> </div>
+                <a href="#">Hire me</a>
+                <div class="text-1">N_CREATIONZ is an aesthetic Graphics/Fashion design site designed
+                    for the purpose of offering all types of graphics designs and apparel to target audience
+                    . N_CREATIONZ in a nutshell is known for creating exclusive / premium designs for businesses and it's individual
+                    clients for the purpose of publicity, aesthetics and advertising . We alsoe specialise in sewing male clothing both
+                    casuals,
+                    native outfits, designers and senators styles outfit. In conclusion we are purpose driven and our customer service
+                    is topnotch
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+               <div class="column left">
+                   <img th:src="@{'/images/kelechiimage.jpg'}" style="height: 400px;
+    width: 400px;">
+               </div> 
+               <div class="column right">
+                   <div class="text">
+                       I'm Clement Chinonso Eze <span class="typingabout"></span>
+                   </div>
+                   <p>My name is Clement Chinonso Eze, Graduate from the department of Fine and
+                    Applied Art, Nnamdi Azikiwe University Awka, Anambra State
+                    . A graphic designer and an artist with over 4 years experience.
+                    I have created so many brand designs for notable companies and upcoming
+                    small scale businesses for the purpose of publicity and advertising</p>
+                   <a href="#">Download CV</a>
+               </div>
+            </div>
+        </div>
+    </section>
+<!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+              <div class="card">
+                 <div class="box">
+                     <i class="fas fa-paint-brush"></i>
+                     <div class="text">Banner/Logo designs</div>
+                     <p>I draft and create aesthetic designs for logos and banners of designs for business publicity and for other activities such as ceremonial event</p>
+                 </div> 
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>                        <div class="text">Advertising</div>
+                        <p>I implements designs for advertisements such as Companies brand and fliers</p>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-paint-brush"></i>                            <div class="text">Digital Painting </div>
+                            <p>
+                                I create designs for aesthetic drawings and painting using the core graphics technologies such as Adobe Photo Shop
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <i class="fas fa-paint-brush"></i>                                <div class="text">House Painting</div>
+                                <p>                      
+     I put my design principles into practice in physical painting of building structures and other related services                      </p>
+                            </div>
+                            <i class="fas fa-paint-brush"></i>                                <div class="text"> Drawings</div>
+                                <p>                      
+     I specialize in drawings, such as portrait drawings and other related services                    </p>
+                            <div>
+              </div>
+              <div class="card">
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>                        <div class="text">Fashion Designer</div>
+                    <p>I have an indepth practical knowledge of sewing apparels , specifically for Males</p>
+                </div>
+              </div>  
+            </div>
+                
+        </div>
+    </section>
+
+    <!-- skills section start -->
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My Skills</h2>
+        <div class="skills-content">
+          <div class="column left">
+              <div class="text">
+                  My Creative Skills & experience.
+              </div>
+              <p>Graduate Artist with wide experience in global cross cutting aethetic graphical technologies. I have been the design manager of several comapanies brands and logos with over 3 years of experience</p>
+              <a href="#">Read More</a>
+          </div> 
+          <div class="column right">
+              <div class="bars">
+                  <div class="info">
+<span>Digital Painting</span>
+<span>70%</span>
+                  </div>
+                  <div class="line html">
+
+                  </div>
+              </div>
+            <div class="bars">
+                <div class="info">
+                    <span>Brand and Logo Designs</span>
+                    <span>80%</span>
+                </div>
+                <div class="line css">
+                
+                </div>
+            </div>
+            <div class="bars">
+                <div class="info">
+                    <span>Manual Drawing</span>
+                    <span>85%</span>
+                </div>
+                <div class="line javascript">
+                
+                </div>
+            </div>
+          </div>
+            </div>
+          </div> 
+        </div>
+    </div>
+</section>
+<!-- teams section start -->
+
+
+<!-- contact section start  -->
+      <section class="contact" id="contact">
+          <div class="max-width">
+              <h2 class="title">Contact me</h2>
+              <div class="contact-content">
+                  <div class="column left">
+<div class="text">Get in Touch</div>
+<p>Get in touch with me here in online platform through this site by sending message below or through my phone contact number</p>
+<div class="icons">
+    <div class="row">
+<i class="fas fa-user"></i>
+<div class="info">
+    <div class="head">Name:</div>
+    <div class="sub-title">Christian Kelechi</div>
+</div>
+    </div>
+    <div class="row">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="info">
+            <div class="head">Address:</div>
+            <div class="sub-title">25B UGWUAJIE STREET ODENIGBO NSUKKA</div>
+        </div>
+    </div>
+<div class="row">
+    <i class="fas fa-envelope"></i>
+    <div class="info">
+        <div class="head">Email:</div>
+        <div class="sub-title">kezechristian@gmail.com</div>
+    </div>
+</div>
+</div>
+                  </div>
+                  <div class="column right">
+                      <div class="text">
+                          Message Me
+                      </div>
+                      <form action="#">
+                        <div class="fields">
+                          <div class="field name">
+                              <input type="text" placeholder="Name" required>
+                          </div> <div class="field email">
+                            <input type="email" placeholder="Email"
+                            required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject"
+                            required
+                            class="subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea name="" id="" cols="100" rows="100" placeholder="Describe project" required></textarea>
+                        </div>
+                        <div class="button">
+                         <button type="submit">Send message
+
+                         </button>   
+                        </div>
+                        </div>  
+                      </form>
+                  </div>
+                  </div>
+    </div>
+      </section> 
+      <!-- footer section start
+     -->
+     <footer id="footer">
+         <span>Created By <a href="#">CodeBlaze Co Owner</a>| <span class="far fa-copyright">
+
+         </span> 2022 All rights reserved</span>
+     </footer>
 <script th:src="@{'/js/jq.js'}"></script>
-<script th:src="@{'/js/script.js'}"></script>
-<script th:src="@{'/js/fontawesome.min.js'}"></script>
-<script th:src="@{'/js/waypoint.min.js'}"></script>
-<script th:src="@{'/js/owlcarousel.min.js'}"></script>
-<script th:src="@{'/js/mytyped.min.js'}"></script>
+    <script th:src="@{'/js/script.js'}"></script>
+    <script th:src="@{'/js/fontawesome.min.js'}"></script>
+    <script th:src="@{'/js/waypoint.min.js'}"></script>
+    <script th:src="@{'/js/owlcarousel.min.js'}"></script>
+    <script th:src="@{'/js/mytyped.min.js'}"></script>
+    
 </body>
+
 </html>
+<!-- stopped at 1:32:00  of portfolio -->
