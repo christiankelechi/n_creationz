@@ -222,8 +222,9 @@ content: "Who I am";
 width:45% ;
 }
 .about .about-content .left img{
-    height: 400px;
+    height: 100vh;
     width: 400px;
+
     object-fit: cover;
     border-radius: 6px;
 }
