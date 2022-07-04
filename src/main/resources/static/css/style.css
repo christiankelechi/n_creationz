@@ -597,7 +597,7 @@ footer span a:hover{
 }
 
 /* media query */
-@media(max-width:700px) {
+@media(max-width:800px) {
     .menu-btn {
         color: #fff;
         font-size: 23px;
@@ -613,6 +613,9 @@ section.about .column .left img{
     }
     .about{
         margin-top: 100px;
+    }
+    section.project img{
+        margin-bottom: 19px;
     }
         .skills .skills-content .column,
         .contact .contact-content .column {
@@ -656,88 +659,38 @@ section.about .column .left img{
     .home .home-content .text-3 {
         font-size: 35px;
     }
-    section.home{
+    section.home .max-width{
+        margin-top: 6rem;
     padding-left: 1rem;
-    position: relative;
-        margin-bottom: 20rem;
+        margin-bottom: 5rem;
+        height: 100vh;
+    
+    }
+    
+    section.home{
         height: 200vh;
-        padding-bottom: 5rem;
+        margin-bottom: 3rem;
+        padding-bottom: 15rem;
+    }
+    section.home .home-content{
+        justify-content: center;
+        text-align: center;
+    }
+    section.about{
+        display: block;
+        height: 200vh;
+    }
+    section.navbar{
+        margin-bottom: 10rem;
     }
     section.about .about-content{
         display: block;
     }
+    section.about .about-content .column .left{
+        float: left;
+        width: fit-content;
+    }
 }
-@media(max-width:690px) {
-    .max-width {
-        padding: 0 23px;
-       
-    }
-    section.home{
-height: 200vh;
-    }
-   .home .max-width{
-        height: 200vh;
-    }
-    section.home{
-
-    }
-    section.about{
-    
-        height:200vh;
-        padding: 15%;
-    }
-    .home-max-width{
-    margin-top:40rem;
-    margin-bottom: 5rem;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-
-    .home .home-content .text-2 {
-        font-size: 60px;
-    }
-
-    .home .home-content .text-3 {
-        font-size: 32px;
-    }
-        .skills .skills-content .column{
-         width: 100%;   
-        }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .about .about-content .column{
-width: 100vh
-    }
-    .about{
-        margin-top: 6%;
-    }
-    .about .about-content{
-        display: block;
-    }
-        .about .about-content .left {
-            display: flex;
-            justify-content: center;
-            margin:0 auto 60px ;
-        }
-                .about .about-content .right {
-                    flex: 100%;
-                }
-        .max-width {
-            max-width: 800px;
-        }
-        .services .serv-content .card{
-            /* width: calc(50% - 10px); */
-            margin-bottom: 20px;
-        }
-.home{
-    height: 100vh;
-}
-
-    }
 @media(max-width:50px) {
     .home .home-content .text-2 {
         font-size: 50px;
@@ -759,5 +712,6 @@ section.teams{
 .navbar .menu li a:hover{
     color: aqua;
 }
+
 
 
