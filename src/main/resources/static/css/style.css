@@ -614,14 +614,14 @@ footer span a:hover{
     }
 section.about .column .left img{
     margin-left: 2rem;
-    width: 100vh;
+    
 }
-    .max-width {
-        padding: 0 50px;
-    }
-    .about{
-        margin-top: 100px;
-    }
+section.about img{
+width: 70%;
+height: 100%;
+}
+
+    
     section.project img{
         margin-bottom: 19px;
     }
@@ -686,7 +686,7 @@ section.about .column .left img{
     }
     section.about{
         display: block;
-        height: 180vh;
+        height: 200vh;
     }
     section.navbar{
         margin-bottom: 10rem;
