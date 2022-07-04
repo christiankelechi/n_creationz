@@ -670,7 +670,7 @@ section.about .column .left img{
     section.home{
         height: 200vh;
         margin-bottom: 3rem;
-        padd
+        padding-bottom: 15rem;
     }
     section.home .home-content{
         justify-content: center;
@@ -714,6 +714,7 @@ section.teams{
 }
 section.home{
     margin-bottom: 1rem;
+    height: 200vh;
 }
 
 
