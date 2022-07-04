@@ -6,6 +6,14 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* kc styling */
+section.home{
+    margin-bottom: 10px;
+    height: 200vh;
+}
+section.about{
+    height: 200vh;
+}
 html{
   scroll-behavior: smooth;  
 }
@@ -597,7 +605,7 @@ footer span a:hover{
 }
 
 /* media query */
-@media(max-width:800px) {
+@media(max-width:900px) {
     .menu-btn {
         color: #fff;
         font-size: 23px;
@@ -668,9 +676,9 @@ section.about .column .left img{
     }
     
     section.home{
-        height: 200vh;
-        margin-bottom: 3rem;
-        padding-bottom: 15rem;
+        height: 150vh;
+        margin-bottom: 5rem;
+        padding-bottom: 5rem;
     }
     section.home .home-content{
         justify-content: center;
@@ -678,7 +686,7 @@ section.about .column .left img{
     }
     section.about{
         display: block;
-        height: 200vh;
+        height: 180vh;
     }
     section.navbar{
         margin-bottom: 10rem;
@@ -687,9 +695,22 @@ section.about .column .left img{
         display: block;
     }
     section.about .about-content .column .left{
-        float: left;
-        width: fit-content;
+        
     }
+    section.about img{
+        width: 80vh;
+    }
+    
+    section.about .columncontainer{
+        padding: 10px;
+        width: 80vh;
+        display: block;
+    }
+    section.about .about-content .column .right p{
+        
+    margin-right: 30px;
+    }
+
 }
 @media(max-width:50px) {
     .home .home-content .text-2 {
@@ -700,22 +721,16 @@ section.about .column .left img{
     .home .home-content .text-3 {
         font-size: 27px;
     }
-}
-.teams .card{
-    width: 100%;
-    height: 60vh;
-}
-section.teams{
-    height: 500vh;
-    
+
 }
 .navbar .menu li a:hover{
     color: aqua;
 }
-section.home{
-    margin-bottom: 1rem;
-    height: 200vh;
+section.projects p{
+    margin: 2rem;
 }
+
+
 
 
 
