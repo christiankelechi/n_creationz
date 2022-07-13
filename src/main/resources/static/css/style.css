@@ -257,7 +257,16 @@ width:45% ;
     color: crimson;
     background: none;
 }
-
+.about img{
+    width: 80vw;
+    margin-left: 2%;
+}
+.about .column .left img{
+    
+}
+.about .about-content{
+    
+}
 /* service section styling */
 section.services{
 
@@ -274,6 +283,7 @@ section.services .serv-content{
 section.services .title{
     color: white;
 }
+
 section.services .title::after{
     content: "What I Provide";
 }
@@ -375,6 +385,12 @@ content: "Projects Done";
 .projects .brands{
     display: flex;
     
+}
+.projects img{
+    width: 60vw;
+    height: 60vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 /* team section styling*/
 .teams .title::after{
@@ -563,10 +579,18 @@ footer span a:hover{
     padding-right: 2rem;
 }
 /* kc styling */
- .about, .services, .skills, .projects{
-    margin: 2rem;
+.about{
+    margin-left: 2%;
+    margin-right: 2%;   
 }
-
+.skills{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.services{
+    margin-left: 2%;
+    margin-right: 2%;
+}
 /* media query */
 @media(max-width:667px) {
     .menu-btn {
@@ -577,12 +601,11 @@ footer span a:hover{
     }
 
     .max-width {
-        padding: 0 50px;
+        padding: 0 20px;
     }
         .skills .skills-content .column,
         .contact .contact-content .column {
-            width: 100%;
-            margin-bottom: 35px;
+            
         }
     .navbar .menu {
         position: fixed;
@@ -637,7 +660,26 @@ footer span a:hover{
         width: 83vw;
         padding: 2%;
     }
+    .skills{
+        height: 100vh;
+    }
+    .projects{
+        height: 1150vh;
+        
+    }
+    .projects .title{
+        margin-top: 2rem;
+    }
+    .projects .projects-content img{
+align-content: center;
     
+    }
+    .projects img{
+        width: 80vw;
+        height: 80vh;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 /* kc additional styling */
