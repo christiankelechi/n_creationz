@@ -25,15 +25,13 @@ $('.menu-btn').click(function(){
 });
 // typing animation script
 var typed=new Typed(".typing",{
-  strings: ["Artist","Graphic Designer","Freelancer"],
+  strings: ["Fine Artist","Graphic Designer","Freelancer"],
   typeSpeed: 100,
   backspeed: 60,
   loop: true
-
-
 });
 var typed=new Typed(".typingabout",{
-  strings: ["Artist","Graphic Designer","Freelancer"],
+  strings: ["Fine Artist","Graphic Designer","Freelancer"],
   typeSpeed: 100,
   backspeed: 60,
   loop: true
