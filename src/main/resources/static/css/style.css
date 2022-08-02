@@ -656,9 +656,9 @@ footer span a:hover{
         border: 3px solid green;
     }
     .about img{
-        width: 88vw;
-        height: 88vh;
-        
+        width: 85%;
+        height: 50%;
+        margin-left: 8%;
     }
     .skills{
         height: 100vh;
